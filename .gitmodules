@@ -1,0 +1,6 @@
+[submodule "mission"]
+	path = mission
+	url = git@github.com:club-rockets/anirniq-mission.git
+[submodule "shared"]
+	path = shared
+	url = git@github.com:club-rockets/anirniq-shared.git
