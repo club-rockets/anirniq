@@ -4,3 +4,15 @@
 [submodule "shared"]
 	path = shared
 	url = git@github.com:club-rockets/anirniq-shared.git
+[submodule "acquisition"]
+	path = acquisition
+	url = git@github.com:club-rockets/anirniq-acquisition
+[submodule "bluetooth"]
+	path = bluetooth
+	url = git@github.com:club-rockets/anirniq-bluetooth.git
+[submodule "motherboard"]
+	path = motherboard
+	url = git@github.com:club-rockets/anirniq-motherboard.git
+[submodule "communication"]
+	path = communication
+	url = git@github.com:club-rockets/anirniq-communication.git
