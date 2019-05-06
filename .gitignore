@@ -1,0 +1,13 @@
+# IDE files
+.vscode/
+.cproject
+.projects
+
+# Build artefacts
+build/
+*.o
+*.d
+*.bin
+*.elf
+*.hex
+*.map
