@@ -2,7 +2,9 @@
 
 Super repository for all Anirniq modules.
 
-**Content:**
+---
+
+## Table of Contents
 
 - [Configuring your development environment](#configuring-your-development-environment)
   - [Windows](#windows)
@@ -10,7 +12,10 @@ Super repository for all Anirniq modules.
     - [Cloning the project folder](#cloning-the-project-folder)
       - [Adding SSH keys to your GitHub account](#adding-an-SSH-Key-to-your-GitHub-account)
       - [Cloning the super-repo and submodules](#cloning-the-super-repo-and-submodules)
+    - [Configuring Atollic](#configuring-atollic)
   - [Linux](#linux)
+
+---
 
 ## Configuring your development environment
 
@@ -26,30 +31,30 @@ Required tools:
 
 Download the MinGW-get setup from the following [link](https://osdn.net/projects/mingw/downloads/68260/mingw-get-setup.exe) and install it on your machine.
 
-Once installed, launch MinGW-get and check 'msys-base'. Then go to `File > Apply changes` and wait for files to be downloaded and installed.
+Once installed, launch MinGW-get and check 'msys-base-bin'. Then go to `File > Apply changes` and wait for files to be downloaded and installed.
 
-![Installing msys-base]()
+![Installing msys-base](https://i.imgur.com/F0EWX5u.png)
 
 This should've installed MSys in `C:/MinGW/msys/1.0/`.
 
 In the start menu, search for "environment" and select "Edit environment variables".
 
-![Finding the 'Edit environment variable' tool]()
+![Finding the 'Edit environment variable' tool](https://i.imgur.com/LbQXOl5.png)
 
 Select "Path" and then "Edit".
 
-![Environment variables screen]()
+![Environment variables screen](https://i.imgur.com/BdShwxC.png)
 
 "Browse" and navigate to the bin folder in Msys (should be `C:/MinGW/msys/1.0/bin`) and then Ok.
 
-![Adding a directory to PATH]()
+![Adding a directory to PATH](https://i.imgur.com/FudcLtM.png)
 
 To test that everything is working as expected, open a new CMD. Press `Windows-R` and type `CMD` in the text field that appears.
 
-In the terminal, type `make`. If you get an error that "could not find make", something went wrong.  
+In the terminal, type `make`. If you get an error that "'make' is not recognized", something is wrong.  
 If you see `make: *** No targets specified and no makefile found.  Stop.`, everything is working normally.
 
-![Launching make in the cmd]()
+![Launching make in the cmd](https://i.imgur.com/N1AM4o7.png)
 
 #### Cloning the project folders
 
@@ -65,7 +70,7 @@ Press the "hamburger icon" in the top right corner and select "Preferences". On 
 
 Press the "Generate" button, and select the folder in which you wish to save the SSH key pair. You can choose any folder you want, but make sure to save it somewhere where you wont accidentally delete it, as this would break many things. (The recommended, standard folder is `C:/Users/<username>/.ssh`).
 
-![Generating an SSH Key in GitKraken]()
+![Generating an SSH Key in GitKraken](https://i.imgur.com/wnWjVfo.png)
 
 Once the SSH key pair is generated, press the clipboard icon next to the public key path.
 
@@ -73,7 +78,7 @@ Go to your GitHub account, and in the top right corner select "Settings". On the
 
 Paste the content of your clipboard in the "SSH key" text area, and give your key a name (in the "title" text input) that will help you identify this computer.
 
-![Adding an SSH key to GitHub]()
+![Adding an SSH key to GitHub](https://i.imgur.com/HDaf7b4.png)
 
 (Your ssh key should look something like `ssh-rsa ...`. If it doesn't, make sure the keys are generated correctly, and that you press the clipboard icon in GitKraken.)
 
@@ -81,11 +86,11 @@ Paste the content of your clipboard in the "SSH key" text area, and give your ke
 
 In the GitKraken home screen, select "clone". In the URL field, put `git@github.com:club-rockets/anirniq.git`, and change the "Where to clone to" to the folder of your choice (this is where the code will sit in your hard drive, I recommend `C:/Users/<username>/Documents/RockETS/`)
 
-![Cloning a repo with GitKraken]()
+![Cloning a repo with GitKraken](https://i.imgur.com/vLizV3b.png)
 
 Once the clone operation is complete, open the repo. If GitKraken prompts you to "Initialize submodules", press "Yes". Otherwise, you will find a list of submodules in the left sidebar. For each submodules, click on it's name, and select "Initialize this submodule" in the slideout menu that appears.
 
-![Initializing a submodule with GitKraken]()
+![Initializing a submodule with GitKraken](https://i.imgur.com/ZlZLEex.png)
 
 These submodules can be used as normal Git repositories. Before starting to code, make sure you open them ("Open this submodule") and checkout the correct branch. Don't forget that you will need to checkout the correct branch/commit in your board's repo **AND** in the shared repo.
 
