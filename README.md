@@ -6,6 +6,8 @@ Super repository for all Anirniq modules.
 
 ## Table of Contents
 
+- [Module requirements](#module-requirements)
+  - [LEDs](#leds)
 - [Configuring your development environment](#configuring-your-development-environment)
   - [Windows](#windows)
     - [Installing MSys](#installing-msys)
@@ -14,6 +16,27 @@ Super repository for all Anirniq modules.
       - [Cloning the super-repo and submodules](#cloning-the-super-repo-and-submodules)
     - [Configuring Atollic](#configuring-atollic)
   - [Linux](#linux)
+
+---
+
+## Module requirements
+
+### LEDs
+
+Each Anirniq module has 5 LEDs, laid out as follows:
+
+```
+ [V] [1] [2] [3] [4]
+```
+
+| LED | Usage |
+|-----|-------|
+| V   | Power indicator |
+| 1   | Module-specific |
+| 2   | Module-specific |
+| 3   | SD write indicator |
+| 4   | Heartbeat |
+
 
 ---
 
