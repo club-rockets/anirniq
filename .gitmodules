@@ -16,3 +16,6 @@
 [submodule "communication"]
 	path = communication
 	url = git@github.com:club-rockets/anirniq-communication.git
+[submodule "anirniq-testbench"]
+	path = anirniq-testbench
+	url = ssh://github.com/club-rockets/anirniq-testbench.git
