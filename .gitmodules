@@ -19,3 +19,6 @@
 [submodule "anirniq-testbench"]
 	path = anirniq-testbench
 	url = ssh://github.com/club-rockets/anirniq-testbench.git
+[submodule "anirniq-PSU"]
+	path = anirniq-PSU
+	url = https://github.com/club-rockets/anirniq-PSU.git
